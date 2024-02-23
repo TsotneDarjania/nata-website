@@ -19,7 +19,9 @@ export default function Header() {
       <ul
         className={clsx(
           "fixed duration-500 transition-all lg:relative w-screen lg:w-[inherit] h-screen lg:h-[inherit] top-0 lg:top-[inherit] left-0 lg:left-[inherit] bg-[#1a918b] mt-[70px] lg:mt-[0px] lg:flex justify-end georgian-font text-primary pr-10 gap-5 pl-[40px] ",
-          isOpen ? "left-0 opacity-100" : " opacity-0 left-[-100vw]"
+          isOpen
+            ? "left-0 lg:left-[inherit] opacity-100 lg:opacity-100 "
+            : " opacity-0 lg:opacity-100 left-[-100vw] lg:left-[inherit]"
         )}
       >
         <li className=" mt-4 lg:mt-0">
